@@ -15,22 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\vcpkg\buildtrees\harfbuzz\src\harfbuzz-1.4.6\util\hb-view.cc">
+    <ClCompile Include="..\..\vcpkg\buildtrees\harfbuzz\src\harfbuzz-1.4.6\util\hb-shape.cc">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
     <ClCompile Include="..\..\vcpkg\buildtrees\harfbuzz\src\harfbuzz-1.4.6\util\options.cc">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\vcpkg\buildtrees\harfbuzz\src\harfbuzz-1.4.6\util\view-cairo.cc">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\vcpkg\buildtrees\harfbuzz\src\harfbuzz-1.4.6\util\helper-cairo-ansi.cc">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\vcpkg\buildtrees\harfbuzz\src\harfbuzz-1.4.6\util\ansi-print.cc">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\vcpkg\buildtrees\harfbuzz\src\harfbuzz-1.4.6\util\helper-cairo.cc">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
   </ItemGroup>

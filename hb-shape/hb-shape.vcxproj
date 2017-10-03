@@ -18,20 +18,11 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\vcpkg\buildtrees\harfbuzz\src\harfbuzz-1.4.6\util\ansi-print.cc" />
-    <ClCompile Include="..\..\vcpkg\buildtrees\harfbuzz\src\harfbuzz-1.4.6\util\hb-view.cc" />
-    <ClCompile Include="..\..\vcpkg\buildtrees\harfbuzz\src\harfbuzz-1.4.6\util\helper-cairo-ansi.cc" />
-    <ClCompile Include="..\..\vcpkg\buildtrees\harfbuzz\src\harfbuzz-1.4.6\util\helper-cairo.cc" />
-    <ClCompile Include="..\..\vcpkg\buildtrees\harfbuzz\src\harfbuzz-1.4.6\util\options.cc" />
-    <ClCompile Include="..\..\vcpkg\buildtrees\harfbuzz\src\harfbuzz-1.4.6\util\view-cairo.cc" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{EA3819A1-4ADC-4BE1-880A-79008E875280}</ProjectGuid>
-    <RootNamespace>hbTools</RootNamespace>
+    <ProjectGuid>{F34C75F5-A6AF-469A-97FE-AC59BF19D65A}</ProjectGuid>
+    <RootNamespace>hbshape</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
-    <ProjectName>hb-view</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -79,7 +70,7 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>C:\Users\m_fujii\Documents\GitHub\vcpkg\installed\x86-windows\include;C:\Users\m_fujii\Documents\GitHub\vcpkg\installed\x86-windows\include\harfbuzz;$(IncludePath)</IncludePath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\Users\m_fujii\Documents\GitHub\vcpkg\installed\x86-windows\include;C:\Users\m_fujii\Documents\GitHub\vcpkg\installed\x86-windows\include\harfbuzz;</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -87,8 +78,6 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);HAVE_OT;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
-      <ShowIncludes>true</ShowIncludes>
-      <UseFullPaths>true</UseFullPaths>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -124,6 +113,10 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\vcpkg\buildtrees\harfbuzz\src\harfbuzz-1.4.6\util\hb-shape.cc" />
+    <ClCompile Include="..\..\vcpkg\buildtrees\harfbuzz\src\harfbuzz-1.4.6\util\options.cc" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
